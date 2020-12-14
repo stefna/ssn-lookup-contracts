@@ -1,0 +1,29 @@
+{
+	"name": "stefna/ssn-lookup-contracts",
+	"description": "",
+	"type": "library",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"license": "mit",
+	"authors": [
+		{
+			"name": "Andreas Sundqvist",
+			"email": "andreas@stefna.is"
+		}
+	],
+	"require": {
+		"sunkan/enum": "^1.3.0"
+	},
+	"require-dev": {
+		"stefna/codestyle": "^1.5",
+		"phpstan/phpstan": "^0.12.62"
+	},
+	"autoload": {
+		"psr-4": {
+			"Stefna\\SsnLookup\\": "src/"
+		}
+	},
+	"config": {
+		"platform-check": false
+	}
+}
