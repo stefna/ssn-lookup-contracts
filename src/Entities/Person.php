@@ -17,5 +17,5 @@ interface Person
 
 	public function getMunicipalCode(): string;
 
-	public function getDateOfBirth(): \DateTimeInterface;
+	public function getDateOfBirth(): \DateTimeImmutable;
 }

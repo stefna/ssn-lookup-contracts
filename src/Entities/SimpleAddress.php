@@ -4,9 +4,12 @@ namespace Stefna\SsnLookup\Entities;
 
 final class SimpleAddress implements Address
 {
-	private string $zipCode;
-	private string $city;
-	private string $address;
+	/** @var string */
+	private $zipCode;
+	/** @var string */
+	private $city;
+	/** @var string */
+	private $address;
 
 	public function __construct(string $city, string $zipCode, string $address)
 	{

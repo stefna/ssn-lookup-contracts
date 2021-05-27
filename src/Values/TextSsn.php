@@ -2,14 +2,20 @@
 
 namespace Stefna\SsnLookup\Values;
 
+/**
+ * Simple representation of a SSN
+ *
+ * This one should only be used when you don't know anything about the ssn
+ * otherwise please create a more specific class that includes validation
+ * logic for that ssn
+ */
 class TextSsn implements Ssn, \JsonSerializable
 {
-	private string $ssn;
+	/** @var string */
+	private $ssn;
 
 	public static function fromString(string $ssn): self
 	{
-		// todo validate ssn
-
 		return new self($ssn);
 	}
 
