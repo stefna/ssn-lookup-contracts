@@ -4,8 +4,59 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57250334b41a179d6067915555994337",
+    "content-hash": "22d712c6bc2c12c38f92ff20ca4fafd6",
     "packages": [
+        {
+            "name": "stefna/person-contracts",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stefna/person-contracts.git",
+                "reference": "cd1010957f9c09ec5868e7a8469da279d2ed9e13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stefna/person-contracts/zipball/cd1010957f9c09ec5868e7a8469da279d2ed9e13",
+                "reference": "cd1010957f9c09ec5868e7a8469da279d2ed9e13",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/stefnadev/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.1 || ^8.0",
+                "sunkan/enum": "^1.4.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.62",
+                "stefna/codestyle": "^1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stefna\\PersonContract\\": "src/"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/stefnadev/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Sundqvist",
+                    "email": "andreas@stefna.is"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/stefna/person-contracts/issues",
+                "source": "https://github.com/stefna/person-contracts/tree/1.0.0"
+            },
+            "time": "2021-10-11T06:50:26+00:00"
+        },
         {
             "name": "sunkan/enum",
             "version": "1.5.0",
@@ -18,7 +69,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sunkan/enum/zipball/42ee5572f77ffb65391e32ab25e449f48ec8dc46",
                 "reference": "42ee5572f77ffb65391e32ab25e449f48ec8dc46",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/stefnadev/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-json": "*",
@@ -34,7 +91,7 @@
                     "Sunkan\\Enum\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.packagist.com/stefnadev/downloads/",
             "license": [
                 "MIT"
             ],
@@ -49,17 +106,23 @@
     "packages-dev": [
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.88",
+            "version": "0.12.99",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "464d1a81af49409c41074aa6640ed0c4cbd9bb68"
+                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/464d1a81af49409c41074aa6640ed0c4cbd9bb68",
-                "reference": "464d1a81af49409c41074aa6640ed0c4cbd9bb68",
-                "shasum": ""
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b4d40f1d759942f523be267a1bab6884f46ca3f7",
+                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/stefnadev/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^7.1|^8.0"
@@ -82,18 +145,22 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.packagist.com/stefnadev/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.88"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.99"
             },
             "funding": [
                 {
                     "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/phpstan",
                     "type": "github"
                 },
                 {
@@ -105,21 +172,27 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-17T12:24:49+00:00"
+            "time": "2021-09-12T20:09:55+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.6.0",
+            "version": "3.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625"
+                "reference": "f268ca40d54617c6e06757f83f699775c9b3ff2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
-                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
-                "shasum": ""
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f268ca40d54617c6e06757f83f699775c9b3ff2e",
+                "reference": "f268ca40d54617c6e06757f83f699775c9b3ff2e",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/stefnadev/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-simplexml": "*",
@@ -140,7 +213,7 @@
                     "dev-master": "3.x-dev"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.packagist.com/stefnadev/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -161,21 +234,27 @@
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
-            "time": "2021-04-09T00:54:41+00:00"
+            "time": "2021-10-11T04:00:11+00:00"
         },
         {
             "name": "stefna/codestyle",
             "version": "1.11.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/stefnadev/codestyle.git",
+                "url": "https://github.com/stefna/codestyle.git",
                 "reference": "1e7f158fcb70c6ff976e1e74d52c3dd63c2b6b99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefnadev/codestyle/zipball/1e7f158fcb70c6ff976e1e74d52c3dd63c2b6b99",
+                "url": "https://api.github.com/repos/stefna/codestyle/zipball/1e7f158fcb70c6ff976e1e74d52c3dd63c2b6b99",
                 "reference": "1e7f158fcb70c6ff976e1e74d52c3dd63c2b6b99",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/stefnadev/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^7.1 || ^8.0",
@@ -190,7 +269,7 @@
                     "Stefna\\": "src/Stefna/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.packagist.com/stefnadev/downloads/",
             "authors": [
                 {
                     "name": "Andreas",
@@ -199,8 +278,8 @@
             ],
             "description": "Custom php sniffer for stefna",
             "support": {
-                "issues": "https://github.com/stefnadev/codestyle/issues",
-                "source": "https://github.com/stefnadev/codestyle/tree/1.11.1"
+                "issues": "https://github.com/stefna/codestyle/issues",
+                "source": "https://github.com/stefna/codestyle/tree/1.11.1"
             },
             "time": "2021-05-04T14:22:43+00:00"
         }
@@ -211,9 +290,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1 || ^8.0",
-        "ext-json": "*"
+        "php": "^7.1 || ^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

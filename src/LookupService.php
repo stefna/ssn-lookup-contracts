@@ -2,9 +2,9 @@
 
 namespace Stefna\SsnLookup;
 
+use Stefna\PersonContract\Values\Ssn;
 use Stefna\SsnLookup\Entities\Person;
 use Stefna\SsnLookup\Exceptions\SsnLookupException;
-use Stefna\SsnLookup\Values\Ssn;
 
 interface LookupService
 {

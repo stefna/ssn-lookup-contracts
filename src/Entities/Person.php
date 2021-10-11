@@ -2,20 +2,10 @@
 
 namespace Stefna\SsnLookup\Entities;
 
-use Stefna\SsnLookup\Values\Gender;
-use Stefna\SsnLookup\Values\Ssn;
+use Stefna\PersonContract\Entities\PersonWithAddress;
+use Stefna\PersonContract\Entities\PersonWithDoB;
+use Stefna\PersonContract\Entities\Person as BasePerson;
 
-interface Person
+interface Person extends BasePerson, PersonWithAddress, PersonWithDoB
 {
-	public function getGender(): Gender;
-
-	public function getName(): string;
-
-	public function getSsn(): Ssn;
-
-	public function getAddress(): Address;
-
-	public function getMunicipalCode(): string;
-
-	public function getDateOfBirth(): \DateTimeImmutable;
 }
