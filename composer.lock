@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22d712c6bc2c12c38f92ff20ca4fafd6",
+    "content-hash": "7d0f3efa3cbc7b523f60a5d3abb4958e",
     "packages": [
         {
             "name": "stefna/person-contracts",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefna/person-contracts.git",
-                "reference": "cd1010957f9c09ec5868e7a8469da279d2ed9e13"
+                "reference": "bb9852db7885b949601b1ca6feee48cce84e3d9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefna/person-contracts/zipball/cd1010957f9c09ec5868e7a8469da279d2ed9e13",
-                "reference": "cd1010957f9c09ec5868e7a8469da279d2ed9e13",
+                "url": "https://api.github.com/repos/stefna/person-contracts/zipball/bb9852db7885b949601b1ca6feee48cce84e3d9a",
+                "reference": "bb9852db7885b949601b1ca6feee48cce84e3d9a",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -28,11 +28,10 @@
             },
             "require": {
                 "ext-json": "*",
-                "php": "^7.1 || ^8.0",
-                "sunkan/enum": "^1.4.0"
+                "php": "^8.2"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12.62",
+                "phpstan/phpstan": "^1.0",
                 "stefna/codestyle": "^1.5"
             },
             "type": "library",
@@ -53,69 +52,24 @@
             ],
             "support": {
                 "issues": "https://github.com/stefna/person-contracts/issues",
-                "source": "https://github.com/stefna/person-contracts/tree/1.0.0"
+                "source": "https://github.com/stefna/person-contracts/tree/2.0.0"
             },
-            "time": "2021-10-11T06:50:26+00:00"
-        },
-        {
-            "name": "sunkan/enum",
-            "version": "1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sunkan/enum.git",
-                "reference": "42ee5572f77ffb65391e32ab25e449f48ec8dc46"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sunkan/enum/zipball/42ee5572f77ffb65391e32ab25e449f48ec8dc46",
-                "reference": "42ee5572f77ffb65391e32ab25e449f48ec8dc46",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/stefnadev/dists/%package%/%version%/r%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "ext-json": "*",
-                "php": ">=7.1.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^0.12.74",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Sunkan\\Enum\\": "src/"
-                }
-            },
-            "notification-url": "https://repo.packagist.com/stefnadev/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Enum classes",
-            "support": {
-                "issues": "https://github.com/sunkan/enum/issues",
-                "source": "https://github.com/sunkan/enum/tree/1.5.0"
-            },
-            "time": "2021-02-10T21:17:37+00:00"
+            "time": "2024-05-20T13:29:27+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.99",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7"
+                "reference": "e524358f930e41a2b4cca1320e3b04fc26b39e0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b4d40f1d759942f523be267a1bab6884f46ca3f7",
-                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e524358f930e41a2b4cca1320e3b04fc26b39e0b",
+                "reference": "e524358f930e41a2b4cca1320e3b04fc26b39e0b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -125,7 +79,7 @@
                 ]
             },
             "require": {
-                "php": "^7.1|^8.0"
+                "php": "^7.2|^8.0"
             },
             "conflict": {
                 "phpstan/phpstan-shim": "*"
@@ -135,11 +89,6 @@
                 "phpstan.phar"
             ],
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.12-dev"
-                }
-            },
             "autoload": {
                 "files": [
                     "bootstrap.php"
@@ -150,9 +99,16 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
+            "keywords": [
+                "dev",
+                "static analysis"
+            ],
             "support": {
+                "docs": "https://phpstan.org/user-guide/getting-started",
+                "forum": "https://github.com/phpstan/phpstan/discussions",
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.99"
+                "security": "https://github.com/phpstan/phpstan/security/policy",
+                "source": "https://github.com/phpstan/phpstan-src"
             },
             "funding": [
                 {
@@ -162,30 +118,22 @@
                 {
                     "url": "https://github.com/phpstan",
                     "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/phpstan",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
-                    "type": "tidelift"
                 }
             ],
-            "time": "2021-09-12T20:09:55+00:00"
+            "time": "2024-05-15T08:00:59+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.6.1",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "f268ca40d54617c6e06757f83f699775c9b3ff2e"
+                "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
+                "reference": "57e09801c2fbae2d257b8b75bebb3deeb7e9deb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f268ca40d54617c6e06757f83f699775c9b3ff2e",
-                "reference": "f268ca40d54617c6e06757f83f699775c9b3ff2e",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/57e09801c2fbae2d257b8b75bebb3deeb7e9deb2",
+                "reference": "57e09801c2fbae2d257b8b75bebb3deeb7e9deb2",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -201,11 +149,11 @@
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.3.4"
             },
             "bin": [
-                "bin/phpcs",
-                "bin/phpcbf"
+                "bin/phpcbf",
+                "bin/phpcs"
             ],
             "type": "library",
             "extra": {
@@ -220,34 +168,58 @@
             "authors": [
                 {
                     "name": "Greg Sherwood",
-                    "role": "lead"
+                    "role": "Former lead"
+                },
+                {
+                    "name": "Juliette Reinders Folmer",
+                    "role": "Current lead"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/PHPCSStandards/PHP_CodeSniffer/graphs/contributors"
                 }
             ],
             "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
-            "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "homepage": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
             "keywords": [
                 "phpcs",
-                "standards"
+                "standards",
+                "static analysis"
             ],
             "support": {
-                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
-                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
-                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
+                "issues": "https://github.com/PHPCSStandards/PHP_CodeSniffer/issues",
+                "security": "https://github.com/PHPCSStandards/PHP_CodeSniffer/security/policy",
+                "source": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
+                "wiki": "https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki"
             },
-            "time": "2021-10-11T04:00:11+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/PHPCSStandards",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/jrfnl",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/php_codesniffer",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2024-05-20T08:11:32+00:00"
         },
         {
             "name": "stefna/codestyle",
-            "version": "1.11.1",
+            "version": "1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefna/codestyle.git",
-                "reference": "1e7f158fcb70c6ff976e1e74d52c3dd63c2b6b99"
+                "reference": "3df1c2244a00fe006cde51b0a1b74e6e6463fd10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefna/codestyle/zipball/1e7f158fcb70c6ff976e1e74d52c3dd63c2b6b99",
-                "reference": "1e7f158fcb70c6ff976e1e74d52c3dd63c2b6b99",
+                "url": "https://api.github.com/repos/stefna/codestyle/zipball/3df1c2244a00fe006cde51b0a1b74e6e6463fd10",
+                "reference": "3df1c2244a00fe006cde51b0a1b74e6e6463fd10",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -258,7 +230,7 @@
             },
             "require": {
                 "php": "^7.1 || ^8.0",
-                "squizlabs/php_codesniffer": "^3.0.0"
+                "squizlabs/php_codesniffer": "^3.8.0"
             },
             "bin": [
                 "bin/stefna-hook-install"
@@ -270,6 +242,9 @@
                 }
             },
             "notification-url": "https://repo.packagist.com/stefnadev/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Andreas",
@@ -279,9 +254,9 @@
             "description": "Custom php sniffer for stefna",
             "support": {
                 "issues": "https://github.com/stefna/codestyle/issues",
-                "source": "https://github.com/stefna/codestyle/tree/1.11.1"
+                "source": "https://github.com/stefna/codestyle/tree/1.17.0"
             },
-            "time": "2021-05-04T14:22:43+00:00"
+            "time": "2024-04-16T06:42:58+00:00"
         }
     ],
     "aliases": [],
@@ -290,8 +265,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1 || ^8.0"
+        "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }
