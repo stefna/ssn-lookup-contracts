@@ -24,6 +24,11 @@
 			"Stefna\\SsnLookup\\": "src/"
 		}
 	},
+	"scripts": {
+		"check:static-analyze": "phpstan",
+		"check:codestyle": "phpcs -n -s src",
+		"fix:codestyle": "phpcbf --colors src"
+	},
 	"config": {
 		"platform-check": false
 	}
