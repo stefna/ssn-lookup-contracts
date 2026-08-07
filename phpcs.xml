@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset name="api-base">
+	<arg name="tab-width" value="4"/>
+	<arg name="parallel" value="75"/>
+
+	<rule ref="./vendor/stefna/codestyle/library.xml"/>
+</ruleset>

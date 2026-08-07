@@ -12,9 +12,9 @@ final class PersonNotFound extends \DomainException implements SsnLookupExceptio
 
 	public function __construct(
 		Ssn $ssn,
-		string $message = "",
+		string $message = '',
 		int $code = 0,
-		Throwable $previous = null
+		Throwable $previous = null,
 	) {
 		parent::__construct($message ?: 'Person not found', $code, $previous);
 		$this->ssn = $ssn;
